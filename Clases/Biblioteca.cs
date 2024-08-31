@@ -44,7 +44,13 @@ namespace Biblioteca.Clases
                 Libro nuevoLibro = new Libro(titulo, autor);
                 Libros.Add(nuevoLibro);
             }
+        }
 
+        public void ListarLibros() { 
+            Console.WriteLine("Libros disponibles en la biblioteca:");
+            foreach (Libro libro in Libros) {
+                Console.WriteLine(libro.ObtenerInformacion());
+            }
         }
     }
 }
