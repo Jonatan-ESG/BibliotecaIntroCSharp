@@ -11,6 +11,14 @@ namespace Biblioteca
 
             Libro unMundoFeliz = new Libro("Un mundo feliz", "Aldous Huxley"); 
 
+            Console.WriteLine(unMundoFeliz.ObtenerInformacion());
+
+            MiBiblioteca miBiblioteca =  new MiBiblioteca();
+
+            miBiblioteca.AgregarLibro(unMundoFeliz);
+
+            miBiblioteca.AgregarLibro("Orgullo y prejuicio", "Jane Austen");
+            
         }
     }
 }
