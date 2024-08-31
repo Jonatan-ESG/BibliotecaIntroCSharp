@@ -28,21 +28,25 @@ namespace Biblioteca.Clases
             {
                 Libro nuevoLibro = new Libro(titulo, autor, anioPublicacion, isbn);
                 Libros.Add(nuevoLibro);
+                Console.WriteLine($"Libro {nuevoLibro.Titulo} agregado a la biblioteca");
             }
             else if(anioPublicacion.HasValue)
             {
                 Libro nuevoLibro = new Libro(titulo, autor, anioPublicacion);
                 Libros.Add(nuevoLibro);
+                Console.WriteLine($"Libro {nuevoLibro.Titulo} agregado a la biblioteca");
             }
             else if(isbn != null)
             {
                 Libro nuevoLibro = new Libro(titulo, autor, isbn: isbn);
                 Libros.Add(nuevoLibro);
+                Console.WriteLine($"Libro {nuevoLibro.Titulo} agregado a la biblioteca");
             }
             else
             {
                 Libro nuevoLibro = new Libro(titulo, autor);
                 Libros.Add(nuevoLibro);
+                Console.WriteLine($"Libro {nuevoLibro.Titulo} agregado a la biblioteca");
             }
         }
 
@@ -52,5 +56,8 @@ namespace Biblioteca.Clases
                 Console.WriteLine(libro.ObtenerInformacion());
             }
         }
+
+        public void EliminarLibro(string titulo) { }
+        public void BuscarLibro(string autor) { }
     }
 }

@@ -18,6 +18,8 @@ namespace Biblioteca
             miBiblioteca.AgregarLibro(unMundoFeliz);
 
             miBiblioteca.AgregarLibro("Orgullo y prejuicio", "Jane Austen");
+
+            miBiblioteca.ListarLibros();
             
         }
     }
